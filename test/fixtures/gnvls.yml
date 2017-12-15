@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mnn: MyString
+  name: MyString
+  lekform: MyString
+  owner: MyString
+  qntpack: MyString
+  prc_wo_nds: 9.99
+  prc_first_pack: 9.99
+  n_py: MyText
+  date_reg: MyString
+  ean13: 
+  atx: MyString
+  level_nac_opt: 
+  pred_opt_price: 
+  level_nac_rozn: 
+  pred_rozn_price: 9.99
+
+two:
+  mnn: MyString
+  name: MyString
+  lekform: MyString
+  owner: MyString
+  qntpack: MyString
+  prc_wo_nds: 9.99
+  prc_first_pack: 9.99
+  n_py: MyText
+  date_reg: MyString
+  ean13: 
+  atx: MyString
+  level_nac_opt: 
+  pred_opt_price: 
+  level_nac_rozn: 
+  pred_rozn_price: 9.99

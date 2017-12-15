@@ -1,0 +1,92 @@
+<%= form_for(gnvl) do |f| %>
+  <% if gnvl.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(gnvl.errors.count, "error") %> prohibited this gnvl from being saved:</h2>
+
+      <ul>
+      <% gnvl.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :mnn %>
+    <%= f.text_field :mnn %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lekform %>
+    <%= f.text_field :lekform %>
+  </div>
+
+  <div class="field">
+    <%= f.label :owner %>
+    <%= f.text_field :owner %>
+  </div>
+
+  <div class="field">
+    <%= f.label :qntpack %>
+    <%= f.text_field :qntpack %>
+  </div>
+
+  <div class="field">
+    <%= f.label :prc_wo_nds %>
+    <%= f.text_field :prc_wo_nds %>
+  </div>
+
+  <div class="field">
+    <%= f.label :prc_first_pack %>
+    <%= f.text_field :prc_first_pack %>
+  </div>
+
+  <div class="field">
+    <%= f.label :n_py %>
+    <%= f.text_area :n_py %>
+  </div>
+
+  <div class="field">
+    <%= f.label :date_reg %>
+    <%= f.text_field :date_reg %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ean13 %>
+    <%= f.text_field :ean13 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :atx %>
+    <%= f.text_field :atx %>
+  </div>
+
+  <div class="field">
+    <%= f.label :level_nac_opt %>
+    <%= f.text_field :level_nac_opt %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pred_opt_price %>
+    <%= f.text_field :pred_opt_price %>
+  </div>
+
+  <div class="field">
+    <%= f.label :level_nac_rozn %>
+    <%= f.text_field :level_nac_rozn %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pred_rozn_price %>
+    <%= f.text_field :pred_rozn_price %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

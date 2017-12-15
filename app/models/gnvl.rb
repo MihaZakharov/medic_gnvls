@@ -1,0 +1,2 @@
+class Gnvl < ApplicationRecord
+end

@@ -1,0 +1,131 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@brand-primary: #428bca;
+@brand-success: #5cb85c;
+@brand-info:    #5bc0de;
+@brand-warning: #f0ad4e;
+@brand-danger:  #d9534f;
+
+@gray-darker:  lighten(#000, 13.5%); // #222
+@gray-dark:    lighten(#000, 20%);   // #333
+@gray:         lighten(#000, 33.5%); // #555
+@gray-light:   lighten(#000, 60%);   // #999
+@gray-lighter: lighten(#000, 93.5%); // #eee
+
+
+.cal {
+ background-color: #F0F8FF;
+
+}
+.calendar {
+   height:  400px;
+      td:hover {
+        background-color: #87CEEB;
+      }
+}
+
+
+
+.layout_content_margin_left {
+  margin-left: 5%;
+}
+
+.name-str {
+  text-align: center;
+    margin-top: 50px;
+}
+
+.regforms {
+  width: 40%;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+#main img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+
+.navbar-brand{
+  padding: 0;
+  padding-right: 2px;
+  height: 70px;
+}
+
+.navbar-inverse {
+  background-color: #efefdd;
+  border-color: #efefdd;
+}
+
+body {
+//  background-color: #efefdd;
+
+}
+
+.nav {
+  padding-top: 10px;
+}
+
+.navbar-nav > .active {
+    background-color: #efefdd;
+
+}
+
+.carousel-control.right {
+  left: auto;
+  right: 0;
+//background-color: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  //background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, #efefdd 100%);
+  background-repeat: repeat-x;
+  //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+
+.carousel-control.left {
+  //background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  //background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: linear-gradient(to right, #efefdd 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-repeat: repeat-x;
+  //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+
+.carousel-control:hover, .carousel-control:focus {
+  outline: 0;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.table {
+  max-width: 1170px;
+  width: 1170px;
+}
+
+.table > thead > tr > th {
+  vertical-align: top;
+  border-bottom: 2px solid #ddd;
+}
+
+.container {
+    width: 1170px;
+    //overflow-y:auto;
+}
