@@ -6,6 +6,12 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+        <style media='print' type='text/css'>
+        .noprint {display: none;}
+        body {background:#FFF; color:#000;}
+        a {text-decoration: underline; color:#00F;}
+        }
+        </style>
   </head>
 
   <body>

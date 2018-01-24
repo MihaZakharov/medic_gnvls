@@ -52,4 +52,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'pg', '~> 0.18.4'
 gem "roo", "~> 2.7.0"
-#em 'roo'
+gem 'roo-xls'

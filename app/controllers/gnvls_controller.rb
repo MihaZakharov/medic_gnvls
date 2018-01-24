@@ -4,7 +4,7 @@ class GnvlsController < ApplicationController
   # GET /gnvls
   # GET /gnvls.json
   def index
-    @gnvls = Gnvl.limit(50).order('name asc')
+    @gnvls = Gnvl.limit(100).order('name asc')
   end
 
   # GET /gnvls/1
@@ -15,7 +15,7 @@ class GnvlsController < ApplicationController
   def search
     @par = params[:gnvls_name].to_s
     @gnvls = Gnvl.where(' similarity(name,?)>0.3',@par)
-    
+
   end
 
   def searching
@@ -26,8 +26,8 @@ class GnvlsController < ApplicationController
      #if not @res.exists?
     #    @res = Gnvl.where(' similarity(name,?)>0.1',@par).limit(10)
      #end
-     @res = Gnvl.connection.select_all('select id,name,owner,qntpack, similarity(name,\''+@par+'\')  as range from gnvls group by id,name,owner,qntpack having similarity(name,\''+@par+'\')>0.2 order by range desc limit 10')
-
+     @res = Gnvl.connection.select_all('select id,name,owner,qntpack, similarity(name,\''+@par+'\')  as range from gnvls group by id,name,owner,qntpack having similarity(name,\''+@par+'\')>0.3 order by range desc')
+# limit 50
      res=[]
      buf={}
      @res.each do |prod|

@@ -116,8 +116,8 @@ body {
 }
 
 .table {
-  max-width: 1170px;
-  width: 1170px;
+//  max-width: 1170px;
+//  width: 1170px;
 }
 
 .table > thead > tr > th {
@@ -125,7 +125,31 @@ body {
   border-bottom: 2px solid #ddd;
 }
 
+
 .container {
     width: 1170px;
-    //overflow-y:auto;
+    overflow-x:visible;
+}
+
+#container_head {
+  position: sticky;
+  top: 0;
+  min-height: 2em;
+  opacity: 1;
+  background: grey;
+  width: 1500px;
+}
+
+.fixed {
+  position: fixed;
+  top : 0px;
+  background: grey;
+}
+
+.fixtable-fixed {
+    position: fixed;
+    top: 0;
+    z-index: 101;
+    background-color: #FCF8E4;
+    border-bottom: 1px solid #ddd;
 }

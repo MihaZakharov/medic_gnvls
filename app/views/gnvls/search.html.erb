@@ -1,8 +1,9 @@
+<div class="container">
 <p id="notice"><%= notice %></p>
 
 <H2>Результаты поиска...</H2>
 
-<table class="table table-bordered">
+<table  class="table table-bordered">
   <thead>
     <tr>
       <th>МНН</th>
@@ -20,13 +21,13 @@
       <th>Предельная оптовая цена, руб. с НДС</th>
       <th>Уровень наценки, % Розн</th>
       <th>Предельная розничная цена, руб. с НДС</th>
-      <th colspan="3"></th>
+
     </tr>
   </thead>
 
   <tbody>
     <% @gnvls.each do |gnvl| %>
-      <tr>
+      <tr  class='clickable-row' data-ref="<%= gnvl_path(gnvl) %>">
         <td><%= gnvl.mnn %></td>
         <td><%= gnvl.name %></td>
         <td><%= gnvl.lekform %></td>
@@ -42,7 +43,7 @@
         <td><%= gnvl.pred_opt_price %></td>
         <td><%= gnvl.level_nac_rozn %></td>
         <td><%= gnvl.pred_rozn_price %></td>
-        <td><%= link_to 'Show', gnvl %></td>
+
       </tr>
     <% end %>
   </tbody>
@@ -50,6 +51,6 @@
 
 <br>
 
-<%= link_to 'New Gnvl', new_gnvl_path %>
+
 
 </div>

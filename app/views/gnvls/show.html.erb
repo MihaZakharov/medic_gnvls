@@ -1,79 +1,82 @@
+<div class="container">
 <p id="notice"><%= notice %></p>
-
+<span class="noprint">
+  <input type="button" value="Печать" onclick="print()"></input>
+</span>
 <p>
-  <strong>Mnn:</strong>
+  <strong>МНН:</strong>
   <%= @gnvl.mnn %>
 </p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Наименование:</strong>
   <%= @gnvl.name %>
 </p>
 
 <p>
-  <strong>Lekform:</strong>
+  <strong>Лек.форма:</strong>
   <%= @gnvl.lekform %>
 </p>
 
 <p>
-  <strong>Owner:</strong>
+  <strong>Изготовитель:</strong>
   <%= @gnvl.owner %>
 </p>
 
 <p>
-  <strong>Qntpack:</strong>
+  <strong>Кол.упак:</strong>
   <%= @gnvl.qntpack %>
 </p>
 
 <p>
-  <strong>Prc wo nds:</strong>
+  <strong>Предельная цена без НДС:</strong>
   <%= @gnvl.prc_wo_nds %>
 </p>
 
 <p>
-  <strong>Prc first pack:</strong>
+  <strong>Цена указана для первич. упаковки:</strong>
   <%= @gnvl.prc_first_pack %>
 </p>
 
 <p>
-  <strong>N py:</strong>
+  <strong>№ РУ:</strong>
   <%= @gnvl.n_py %>
 </p>
 
 <p>
-  <strong>Date reg:</strong>
+  <strong>Дата регистрации цены(№ решения):</strong>
   <%= @gnvl.date_reg %>
 </p>
 
 <p>
-  <strong>Ean13:</strong>
+  <strong>Штрих-код (EAN13):</strong>
   <%= @gnvl.ean13 %>
 </p>
 
 <p>
-  <strong>Atx:</strong>
+  <strong>АТХ:</strong>
   <%= @gnvl.atx %>
 </p>
 
 <p>
-  <strong>Level nac opt:</strong>
+  <strong>Уровень наценки, % Опт:</strong>
   <%= @gnvl.level_nac_opt %>
 </p>
 
 <p>
-  <strong>Pred opt price:</strong>
+  <strong>Предельная оптовая цена, руб. с НДС:</strong>
   <%= @gnvl.pred_opt_price %>
 </p>
 
 <p>
-  <strong>Level nac rozn:</strong>
+  <strong>Уровень наценки, % Розн:</strong>
   <%= @gnvl.level_nac_rozn %>
 </p>
 
 <p>
-  <strong>Pred rozn price:</strong>
+  <strong>Предельная розничная цена, руб. с НДС:</strong>
   <%= @gnvl.pred_rozn_price %>
 </p>
 
-<%= link_to 'Edit', edit_gnvl_path(@gnvl) %> |
-<%= link_to 'Back', gnvls_path %>
+
+</div>
