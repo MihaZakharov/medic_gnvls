@@ -13,10 +13,6 @@
 <br>
 
 
-<div >
-   <table class="table table-striped" id="container_head">
-   <table class="table table-striped" id="container_body">
-</div>
 
 <table class="table table-striped  fixtable">
   <thead class="fixhead">
@@ -26,7 +22,7 @@
       <th>Лек.форма</th>
       <th>Изготовитель</th>
       <th>Кол.упак</th>
-      <th>Предельная цена без НДС</th>
+<!--      <th>Предельная цена без НДС</th>
       <th>Цена указана для первич. упаковки</th>
       <th>№ РУ</th>
       <th>"Дата регистрации цены(№ решения)"</th>
@@ -34,8 +30,8 @@
       <th>АТХ</th>
       <th>Уровень наценки, % Опт</th>
       <th>Предельная оптовая цена, руб. с НДС</th>
-      <th>Уровень наценки, % Розн</th>
-      <th>Предельная розничная цена, руб. с НДС</th>
+      <th>Уровень наценки, % Розн</th> -->
+      <th>Предельная роз. цена, руб. с НДС</th>
     </tr>
 </thead>
 
@@ -47,7 +43,7 @@
         <td><%= gnvl.lekform %></td>
         <td><%= gnvl.owner %></td>
         <td><%= gnvl.qntpack %></td>
-        <td><%= gnvl.prc_wo_nds %></td>
+<!--        <td><%= gnvl.prc_wo_nds %></td>
         <td><%= gnvl.prc_first_pack %></td>
         <td><%= gnvl.n_py %></td>
         <td><%= gnvl.date_reg %></td>
@@ -55,7 +51,7 @@
         <td><%= gnvl.atx %></td>
         <td><%= gnvl.level_nac_opt %></td>
         <td><%= gnvl.pred_opt_price %></td>
-        <td><%= gnvl.level_nac_rozn %></td>
+        <td><%= gnvl.level_nac_rozn %></td> -->
         <td><%= gnvl.pred_rozn_price %></td>
       </tr>
     <% end %>

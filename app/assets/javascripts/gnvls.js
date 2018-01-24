@@ -86,7 +86,7 @@ $(document).on('turbolinks:load', function() {
 
 //$(".fixhead").appendTo("#container_head");
 //$(".fixbody").appendTo("#container_body");
-/*function FixTable(table) {
+function FixTable(table) {
     var inst = this;
     this.table  = table;
 
@@ -144,5 +144,5 @@ FixTable.prototype.FixColumns = function() {
 $('.fixtable').each(function() {
     new FixTable(this);
 });
-*/
+
 });
